@@ -8,6 +8,7 @@ export const SearchNote = () => {
   const dispatch = useDispatch();
   const { search } = useSelector((state: RootState) => state.notes);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSearch = (e: any) => {
     dispatch(setSearch(e.target.value));
   };
